@@ -1,7 +1,7 @@
 ## Algorithm
 Tracking system allows the user to key his or her User ID to search for infomation associated with that ID. Tracking System consists of three Google sheets in one workbook.
 
-###1. User interface
+__1. User interface__
 where the search box and the output box exist.
 ```
 Set SearchBox = C5
@@ -20,7 +20,7 @@ If N/A, then shows รหัสไม่ถูกต้อง โปรดลอ
 ```
 Set C7=IFNA(INDEX(dataBase!B:B, MATCH(C5, dataBase!A:A, 0)),"รหัสไม่ถูกต้อง โปรดลองอีกครั้ง ติดต่อเจ้าหน้าที่ โทร. 0 2265 6223-5 ค่ะ")
 ```
-###2. trackAI
+__2. trackAI__
 Hide this fomula by referring to the cell in the background engine in another sheet that will be hided, called 'trackAI', which is simply the copy of the UI sheet.
 The search box in trackAI will get the search data from the UI sheet (eTracking) search box (C4)
 ```
@@ -38,7 +38,7 @@ Hide the trackAI sheet. So, the user will only see the simplified fomula: trackA
 
 Protect every cell except the search box.
 
-###3. dataBase
+__3. dataBase__
 Build the dataBase sheet, with two key columns: User ID (dataBase!A:A) and Status (dataBase!B:B).
 
 Embed the sheet in your page at Google Site, and publish it. 
