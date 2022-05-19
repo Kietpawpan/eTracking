@@ -46,3 +46,14 @@ Build the dataBase sheet, with two key columns: User ID (dataBase!A:A) and Statu
 
 Embed the sheet in your page at Google Site, and publish it. 
 
+__4. Official UI__
+Build a new sheet, called "Update", which is a form that allows officials to key new information and clear content in each cell.
+
+Add more columns to the database sheet (dataBase), with the following headers in Row 1:
+```
+A B C D E F G
+ID	Status Title	Name	Email	Phone	Date
+```
+
+
+
