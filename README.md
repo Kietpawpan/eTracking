@@ -17,7 +17,7 @@ Then, get the status data in column B of that User ID, where C5 matches the user
 ```
 =INDEX(dataBase!B:B, MATCH(C5, dataBase!A:A, 0)
 ```
-If N/A, then shows รหัสไม่ถูกต้อง โปรดลองอีกครั้ง ติดต่อเจ้าหน้าที่ โทร. 0 2265 6223-5 ค่ะ, else show the status data. Hence, we have:
+If the result is N/A, then tell the user with this statement: รหัสไม่ถูกต้อง โปรดลองอีกครั้ง ติดต่อเจ้าหน้าที่ โทร. 0 2265 6223-5 ค่ะ, else show the status data.
 ```
 Set C7=IFNA(INDEX(dataBase!B:B, MATCH(C5, dataBase!A:A, 0)),"รหัสไม่ถูกต้อง โปรดลองอีกครั้ง ติดต่อเจ้าหน้าที่ โทร. 0 2265 6223-5 ค่ะ")
 ```
